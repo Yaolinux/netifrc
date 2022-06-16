@@ -7,11 +7,11 @@ if [ x$RC_GOT_FUNCTIONS = xyes -o -n "$(command -v ebegin 2>/dev/null)" ]; then
 	:
 
 # Then check for the presence of functions.sh
-elif [ -f /lib/gentoo/functions.sh ]; then
-	. /lib/gentoo/functions.sh
+elif [ -f /lib/yaolinux/functions.sh ]; then
+	. /lib/yaolinux/functions.sh
 
 else
-	echo "/lib/gentoo/functions.sh not found. Exiting"
+	echo "/lib/yaolinux/functions.sh not found. Exiting"
 	exit 1
 fi
 
